@@ -1,19 +1,19 @@
 # config.yaml
-num_clients: 3
-num_epochs: 1
+num_clients: 60
+num_epochs: 5
 batch_size: 10
-clients_per_round: 2
+clients_per_round: 6
 fraction_fit: 0.1
 learning_rate: 1e-3
 num_rounds: 2
-partitioning: "imbalance_label"
+partitioning: "imbalance_label_dirichlet"
 dataset_name: "chest_xray"
 dataset_seed: 42
 alpha: 0.5
 sigma: 0.1
 labels_per_client: 2  # only used when partitioning is label quantity
 momentum: 0.9
-weight_decay: 0.00001
+weight_decay: 0.00001s
 
 dataset:
   # dataset config
